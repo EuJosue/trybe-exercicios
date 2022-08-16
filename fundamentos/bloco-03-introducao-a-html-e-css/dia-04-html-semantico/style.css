@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0; 
+}
+
+/* ------------- HEADER ------------- */
+
+header {
+padding: 25px 0px 50px;
+background-color: red;
+}
+
+header > nav > li {
+  display: inline-block;
+  margin-right: 100px;
+}
+
+header > nav {
+  border: 0.5px solid black;
+  text-align: center;
+  background-color: aquamarine;
+}
+
+header > h1 {
+  text-align: center;
+}
+
+/* -------------FIM HEADER--------------- */
+
+/* --------------- MAIN ------------------- */
+
+main {
+  background-color: green;
+  width: 85%;
+}
+
+.fatosP {
+  background-color: aqua;
+  width: calc(75% - 2px);
+  float: left;
+  width: 73.6%;
+  padding-left: 10px;
+}
+
+.fatosP h2 {
+  text-align: center;
+}
+
+.fatosP li {
+  padding-left: 50px;
+  padding-right: 30px;
+}
+
+.painelSobre {
+  width: calc(18% - 2px);
+  min-width: 150px;
+  float: left;
+  border: 2px solid black;
+  max-width: 204px; 
+}
+
+.painelSobre > picture > img {
+  width: 99%;
+  border: 1px solid black;
+}
+
+.fatosDs {
+  float: left;
+  background-color: yellow;
+  padding-bottom: 10px;
+  width: 100%;
+  max-width: 1075px;
+}
+
+.fatoD {
+  border: 1px solid black;
+  width: calc(44% - 2px);
+  float: left;
+  margin-left: 4.1%;
+  margin-top: 10px;
+}
+
+body > aside {
+  width: calc(15% - 4px);
+  background-color: brown;
+  position: fixed;
+  margin-left: 85%;
+  border: 2px solid green;
+}
+
+footer {
+  clear: both;
+  padding-right: 25px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
