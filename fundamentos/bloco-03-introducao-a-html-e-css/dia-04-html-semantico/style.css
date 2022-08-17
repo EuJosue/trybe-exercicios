@@ -3,11 +3,19 @@
   padding: 0; 
 }
 
+body {
+  background-color: #B1C5F0;
+}
+
+#end {
+  display: block;
+  clear: both;
+}
 /* ------------- HEADER ------------- */
 
 header {
 padding: 25px 0px 50px;
-background-color: red;
+background-color: #5C6087;
 }
 
 header > nav > li {
@@ -18,11 +26,13 @@ header > nav > li {
 header > nav {
   border: 0.5px solid black;
   text-align: center;
-  background-color: aquamarine;
+  background-color: #B592A0;
 }
 
 header > h1 {
   text-align: center;
+  padding-top: 20px;
+  padding-bottom: 15px;
 }
 
 /* -------------FIM HEADER--------------- */
@@ -30,33 +40,55 @@ header > h1 {
 /* --------------- MAIN ------------------- */
 
 main {
-  background-color: green;
-  width: 85%;
+  width: 86.2%;
 }
 
 .fatosP {
-  background-color: aqua;
-  width: calc(75% - 2px);
+  width: calc(69% - 2px);
+  min-width: 433px;
   float: left;
-  width: 73.6%;
   padding-left: 10px;
+  padding-bottom: 15px;
+  background-color: #92BDA3;
 }
 
 .fatosP h2 {
   text-align: center;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  text-decoration: underline;
 }
 
 .fatosP li {
-  padding-left: 50px;
+  padding-left: 40px;
   padding-right: 30px;
+  line-height: 20px;
+  padding-top: 5px;
 }
 
 .painelSobre {
-  width: calc(18% - 2px);
-  min-width: 150px;
+  width: calc(20% - 2px);
+  min-width: 180px;
   float: left;
   border: 2px solid black;
-  max-width: 204px; 
+  max-width: 235px;
+  background-color: #9DCCB0;
+}
+
+.painelSobre > section > table > caption > h5 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+#tabelaSobre {
+  font-size: 15px;
+  padding-left: 5px;
+  padding-right: 30%;
+}
+
+.painelSobre > section > p {
+  font-size: 14px;
+  text-align: center;
 }
 
 .painelSobre > picture > img {
@@ -66,10 +98,10 @@ main {
 
 .fatosDs {
   float: left;
-  background-color: yellow;
-  padding-bottom: 10px;
+  padding-bottom: 35px;
   width: 100%;
   max-width: 1075px;
+  background-color: #829ACF;
 }
 
 .fatoD {
@@ -78,20 +110,58 @@ main {
   float: left;
   margin-left: 4.1%;
   margin-top: 10px;
+  background-color: #9BB4EB;
 }
 
-body > aside {
-  width: calc(15% - 4px);
-  background-color: brown;
-  position: fixed;
-  margin-left: 85%;
-  border: 2px solid green;
+.fatoD > h3 {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  text-decoration-line: underline;
 }
+
+.fatoD > p {
+  padding-left: 15px;
+  padding-right: 10px;
+  line-height: 20px;
+  padding-bottom: 10px;
+}
+/* -------------- FIM MAIN --------------- */
+
+/* ---------------- ASIDE --------------- */
+
+body > aside {
+  width: calc(10% - 8px);
+  background-color: #65E0C2;
+  position: fixed;
+  margin-left: 90%;
+  border: 2px solid green;
+  height: 65%;
+}
+body > aside > nav > h4 {
+  font-size: 13.8px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+body > aside > nav > ul > li {
+  list-style: none;
+  padding-bottom: 15px;
+  margin-left: 13px;
+}
+
+/* -------------- FIM ASIDE ------------- */
+
+/* ---------------- FOOTER ----------------- */
 
 footer {
   clear: both;
-  padding-right: 25px;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 0;
+  padding: 5px 10px;
+  padding-left: 76.708%;
+  background-color: paleturquoise;
 }
+
+/* --------------- FIM FOOTER -------------- */
