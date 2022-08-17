@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  padding: 0; 
+  padding: 0;
 }
 
 body {
@@ -11,25 +11,26 @@ body {
   display: block;
   clear: both;
 }
+
 /* ------------- HEADER ------------- */
 
 header {
-padding: 25px 0px 50px;
-background-color: #5C6087;
+  padding: 25px 0px 50px;
+  background-color: #5C6087;
 }
 
-header > nav > li {
+header>nav>li {
   display: inline-block;
   margin-right: 100px;
 }
 
-header > nav {
+header>nav {
   border: 0.5px solid black;
   text-align: center;
   background-color: #B592A0;
 }
 
-header > h1 {
+header>h1 {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 15px;
@@ -75,7 +76,7 @@ main {
   background-color: #9DCCB0;
 }
 
-.painelSobre > section > table > caption > h5 {
+#tabelaSobre h5 {
   text-align: center;
   text-decoration: underline;
 }
@@ -86,12 +87,12 @@ main {
   padding-right: 30%;
 }
 
-.painelSobre > section > p {
+.painelSobre>section>p {
   font-size: 14px;
   text-align: center;
 }
 
-.painelSobre > picture > img {
+.painelSobre>picture>img {
   width: 99%;
   border: 1px solid black;
 }
@@ -113,24 +114,25 @@ main {
   background-color: #9BB4EB;
 }
 
-.fatoD > h3 {
+.fatoD>h3 {
   text-align: center;
   padding-top: 10px;
   padding-bottom: 15px;
   text-decoration-line: underline;
 }
 
-.fatoD > p {
+.fatoD>p {
   padding-left: 15px;
   padding-right: 10px;
   line-height: 20px;
   padding-bottom: 10px;
 }
+
 /* -------------- FIM MAIN --------------- */
 
 /* ---------------- ASIDE --------------- */
 
-body > aside {
+body>aside {
   width: calc(10% - 8px);
   background-color: #65E0C2;
   position: fixed;
@@ -138,13 +140,15 @@ body > aside {
   border: 2px solid green;
   height: 65%;
 }
-body > aside > nav > h4 {
+
+body>aside>nav>h4 {
   font-size: 13.8px;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 20px;
 }
-body > aside > nav > ul > li {
+
+body>aside>nav>ul>li {
   list-style: none;
   padding-bottom: 15px;
   margin-left: 13px;
