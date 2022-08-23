@@ -6,7 +6,7 @@ for(let index = 9; index > 0; index -= 1) {
 }
 
 console.log(mult)
-
+console.log("----------------")
 let word = "tryber";
 let drow = "";
 
@@ -15,7 +15,7 @@ for(let index = word.length - 1; index >= 0; index -= 1) {
 }
 
 console.log(drow)
-
+console.log("----------------")
 let array = ['java', 'javascript', 'python', 'html', 'css'];
 let maiorPalavra = ""
 let menorPalavra = "dsadasdasdsadasdsadsadsadsa"
@@ -31,6 +31,7 @@ for(let index = 0; index < array.length; index += 1) {
 
 console.log(maiorPalavra)
 console.log(menorPalavra)
+console.log("----------------")
 let maiorNumeroPrimo = 0;
 for(let index = 2; index <= 15648556; index += 1) {
   if(index % 2 !== 0) {
