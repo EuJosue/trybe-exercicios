@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p id="paragraph">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p id="second-paragraph">Segundo parágrafo!</p>
+    </header>
+    <script>
+      const paragraph = document.getElementById("paragraph");
+      paragraph.style.color = "red";
+      document.getElementById("page-title").innerText = 'Shrek 2';
+      document.getElementById("second-paragraph").innerText = 'Usando minha criatividade para alterar o segundo parágrafo.';
+      document.getElementById('second-paragraph').style.color = 'purple';
+      document.getElementById('second-paragraph').innerText = document.getElementById('second-paragraph').innerText.toUpperCase();
+      document.getElementById('second-paragraph').style.fontWeight = '200';
+      document.getElementById('subtitle').innerText = 'Olha a minha criatividade';
+      document.getElementById('subtitle').style.color = 'green';
+      document.getElementById('subtitle').style.fontWeight = '800';
+      document.getElementById('subtitle').style.fontSize = 'larger';
+    </script>
+  </body>
+</html>
