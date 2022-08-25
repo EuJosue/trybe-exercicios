@@ -1,13 +1,11 @@
-const firstParagraph = document.getElementById("first-paragraph");
-firstParagraph.style.color = "red";
-document.getElementById("page-title").innerText = 'Shrek 2';
-document.getElementById("second-paragraph").innerText = 'Usando minha criatividade para alterar o segundo parágrafo.';
-document.getElementById('second-paragraph').style.color = 'purple';
-document.getElementById('second-paragraph').innerText = document.getElementById('second-paragraph').innerText.toUpperCase();
-document.getElementById('second-paragraph').style.fontWeight = '200';
-document.getElementById('subtitle').innerText = 'Olha a minha criatividade';
-document.getElementById('subtitle').style.fontWeight = '800';
-document.getElementById('subtitle').style.fontSize = 'larger';
-
-document.getElementsByClassName('paragraph')[0].style.fontSize = 'small';
-document.getElementsByTagName('h4')[0].style.color = 'green';
+document.querySelector('p').style.color = 'red';
+document.querySelector('p').style.fontSize = 'small'
+document.querySelector('h2').innerText = 'Shrek 2';
+document.querySelectorAll('p')[1].innerText = 'Usando minha criatividade para alterar o segundo parágrafo.';
+document.querySelectorAll('p')[1].style.color = 'purple';
+document.querySelectorAll('p')[1].innerText = document.querySelectorAll('p')[1].innerText.toUpperCase();
+document.querySelectorAll('p')[1].style.fontWeight = '200';
+document.querySelector('h4').innerText = 'Olha a minha criatividade';
+document.querySelector('h4').style.fontWeight = '800';
+document.querySelector('h4').style.fontSize = 'larger';
+document.querySelector('h4').style.color = 'green';
