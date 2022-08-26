@@ -1,91 +1,129 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Exercício 5.2</title>
-    <style>
-      section {
-        border-color: black;
-        border-style: solid;
-      }
 
-      .title {
-        text-align: center;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Exercício 5.2</title>
+  <style>
+    section {
+      border-color: black;
+      border-style: solid;
+    }
 
-      .main-content {
-        background-color: yellow;
-      }
+    .title {
+      text-align: center;
+    }
 
-      .main-content .center-content {
-        background-color: red;
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-      }
+    .main-content {
+      background-color: yellow;
+    }
 
-      .main-content .center-content p {
-        font-style: italic;
-      }
+    .main-content .center-content {
+      background-color: red;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-      .main-content .left-content {
-        background-color: green;
-        width: 60%;
-        margin-left: 0;
-        margin-right: auto;
-      }
+    .main-content .center-content p {
+      font-style: italic;
+    }
 
-      .main-content .left-content .small-image {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 100%;
-      }
+    .main-content .left-content {
+      background-color: green;
+      width: 60%;
+      margin-left: 0;
+      margin-right: auto;
+    }
 
-      .main-content .right-content {
-        background-color: blue;
-        width: 60%;
-        margin-left: auto;
-        margin-right: 0;
-      }
+    .main-content .left-content .small-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 100%;
+    }
 
-      .main-content .description {
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-    <script>
-      const containerBody = document.getElementsByTagName('body')[0];
+    .main-content .right-content {
+      background-color: blue;
+      width: 60%;
+      margin-left: auto;
+      margin-right: 0;
+    }
 
-      const newH1 = document.createElement('h1');
-      newH1.innerText = 'Exercício 5.2 - JavaScript DOM'
-      containerBody.appendChild(newH1);
+    .main-content .description {
+      text-align: center;
+    }
+  </style>
+</head>
 
-      const newMain = document.createElement('main');
-      newMain.className = 'main-content';
-      containerBody.appendChild(newMain)
+<body>
+  <script>
 
-      const containerMain = document.getElementsByTagName('main')[0];
+    function addElement(parent, child) {
+      parent.appendChild(child)
+    }
+    const containerBody = document.getElementsByTagName('body')[0];
 
-      const newSectionCenter = document.createElement('section');
-      newSectionCenter.className = 'center-content';
-      containerMain.appendChild(newSectionCenter);
+    const newH1 = document.createElement('h1');
+    newH1.innerText = 'Exercício 5.2 - JavaScript DOM'
+    containerBody.appendChild(newH1);
 
-      const containerSectionCenter = document.getElementsByClassName('center-content')[0];
+    const newMain = document.createElement('main');
+    newMain.className = 'main-content';
+    containerBody.appendChild(newMain)
 
-      const newP = document.createElement('p');
-      newP.innerText = 'Texto adicionado.'
-      containerSectionCenter.appendChild(newP);
+    const containerMain = document.getElementsByTagName('main')[0];
 
-      const newSectionLeft = document.createElement('section');
-      newSectionLeft.className = 'left-content';
-      containerMain.appendChild(newSectionLeft);
+    const newSectionCenter = document.createElement('section');
+    newSectionCenter.className = 'center-content';
+    containerMain.appendChild(newSectionCenter);
 
-      const newSectionRight = document.createElement('section');
-      newSectionRight.className = 'right-content';
-      containerMain.appendChild(newSectionRight);
-    </script>
-  </body>
+    const containerSectionCenter = document.getElementsByClassName('center-content')[0];
+
+    const newP = document.createElement('p');
+    newP.innerText = 'Texto adicionado.'
+    containerSectionCenter.appendChild(newP);
+
+    const newSectionLeft = document.createElement('section');
+    newSectionLeft.className = 'left-content';
+    containerMain.appendChild(newSectionLeft);
+
+    const containerSectionLeft = document.getElementsByClassName('left-content')[0];
+
+    const newSectionRight = document.createElement('section');
+    newSectionRight.className = 'right-content';
+    containerMain.appendChild(newSectionRight);
+
+    const containerSectionRight = document.getElementsByClassName('right-content')[0];
+
+    const newImg = document.createElement('img');
+    newImg.src = 'https://picsum.photos/200'
+    newImg.className = 'small-image'
+    containerSectionLeft.appendChild(newImg);
+
+    const newUList = document.createElement('ul');
+    containerSectionRight.appendChild(newUList);
+
+    function newLi(string) {
+      newUList.innerHTML += '<li>' + string + '</li>';
+    }
+
+    let arrayLista = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+
+    for (let index = 0; index < 10; index += 1) {
+      newLi(arrayLista[index]);
+    }
+
+    function createH3Element() {
+      const newH3 = document.createElement('h3');
+      return newH3
+    }
+
+    addElement(containerMain, createH3Element())
+    addElement(containerMain, createH3Element())
+    addElement(containerMain, createH3Element())
+  </script>
+</body>
+
 </html>
