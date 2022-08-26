@@ -63,17 +63,17 @@
     function addElement(parent, child) {
       parent.appendChild(child)
     }
-    
+
     const containerBody = document.getElementsByTagName('body')[0];
 
-    const newH1 = document.createElement('h1');
-    newH1.innerText = 'Exercício 5.2 - JavaScript DOM'
-    containerBody.appendChild(newH1);
+    const newH1Element = document.createElement('h1');
+    newH1Element.innerText = 'Exercício 5.2 - JavaScript DOM'
+    newH1Element.className = 'title'
+    containerBody.appendChild(newH1Element);
 
-    const newMain = document.createElement('main');
-    newMain.className = 'main-content';
-    containerBody.appendChild(newMain)
-
+    const newMainElement = document.createElement('main');
+    newMainElement.className = 'main-content';
+    containerBody.appendChild(newMainElement)
     const containerMain = document.getElementsByTagName('main')[0];
 
     function createSectionElement(classes) {
@@ -114,14 +114,17 @@
       newLi(arrayLista[index]);
     }
 
-    function createH3Element() {
+    function createH3Element(classes) {
       const newH3 = document.createElement('h3');
+      newH3.className = classes;
       return newH3
     }
 
-    addElement(containerMain, createH3Element())
-    addElement(containerMain, createH3Element())
-    addElement(containerMain, createH3Element())
+    addElement(containerMain, createH3Element('description'));
+    addElement(containerMain, createH3Element('description'));
+    addElement(containerMain, createH3Element('description'));
+
+    containerMain.removeChild(containerSectionLeft);
   </script>
 </body>
 
