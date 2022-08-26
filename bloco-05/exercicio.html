@@ -59,10 +59,11 @@
 
 <body>
   <script>
-
+    
     function addElement(parent, child) {
       parent.appendChild(child)
     }
+    
     const containerBody = document.getElementsByTagName('body')[0];
 
     const newH1 = document.createElement('h1');
@@ -75,9 +76,15 @@
 
     const containerMain = document.getElementsByTagName('main')[0];
 
-    const newSectionCenter = document.createElement('section');
-    newSectionCenter.className = 'center-content';
-    containerMain.appendChild(newSectionCenter);
+    function createSectionElement(classes) {
+      let newSection = document.createElement('section');
+      newSection.className = classes;
+      return newSection
+    }
+
+    addElement(containerMain, createSectionElement('center-content'))
+    addElement(containerMain, createSectionElement('left-content'))
+    addElement(containerMain, createSectionElement('right-content'))
 
     const containerSectionCenter = document.getElementsByClassName('center-content')[0];
 
@@ -85,15 +92,7 @@
     newP.innerText = 'Texto adicionado.'
     containerSectionCenter.appendChild(newP);
 
-    const newSectionLeft = document.createElement('section');
-    newSectionLeft.className = 'left-content';
-    containerMain.appendChild(newSectionLeft);
-
     const containerSectionLeft = document.getElementsByClassName('left-content')[0];
-
-    const newSectionRight = document.createElement('section');
-    newSectionRight.className = 'right-content';
-    containerMain.appendChild(newSectionRight);
 
     const containerSectionRight = document.getElementsByClassName('right-content')[0];
 
