@@ -69,9 +69,23 @@
 
       const containerMain = document.getElementsByTagName('main')[0];
 
-      const newSection = document.createElement('section');
-      newSection.className = 'center-content';
-      containerMain.appendChild(newSection);
+      const newSectionCenter = document.createElement('section');
+      newSectionCenter.className = 'center-content';
+      containerMain.appendChild(newSectionCenter);
+
+      const containerSectionCenter = document.getElementsByClassName('center-content')[0];
+
+      const newP = document.createElement('p');
+      newP.innerText = 'Texto adicionado.'
+      containerSectionCenter.appendChild(newP);
+
+      const newSectionLeft = document.createElement('section');
+      newSectionLeft.className = 'left-content';
+      containerMain.appendChild(newSectionLeft);
+
+      const newSectionRight = document.createElement('section');
+      newSectionRight.className = 'right-content';
+      containerMain.appendChild(newSectionRight);
     </script>
   </body>
 </html>
