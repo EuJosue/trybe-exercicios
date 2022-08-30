@@ -15,7 +15,8 @@ inputLineHeight.addEventListener('keyup', changeLineHeight);
 inputLineHeight.addEventListener('change', changeLineHeight);
 inputFontFamily.addEventListener('keyup', changeFontFamily);
 inputFontFamily.addEventListener('change', changeFontFamily);
-inputUserText.addEventListener('keyup', changeInnerTextMain)
+inputUserText.addEventListener('keyup', changeInnerTextMain);
+inputUserText.addEventListener('keyup', deleteLorem);
 
 window.onload = document.body.style.backgroundColor = localStorage.getItem('backgroundColor');
 window.onload = inputBackgroundColor.style.backgroundColor = localStorage.getItem('backgroundColor');
@@ -26,6 +27,13 @@ window.onload = document.body.children[1].style.fontSize = localStorage.getItem(
 window.onload = document.body.children[1].style.lineHeight = localStorage.getItem('lineHeight');
 window.onload = document.body.children[1].style.fontFamily = localStorage.getItem('fontFamily');
 window.onload = document.getElementsByTagName('p')[0].innerHTML = localStorage.getItem('innerText');
+window.onload = deleteLorem();
+
+function deleteLorem() {
+  if (document.getElementsByTagName('p')[0].innerHTML !== '') {
+    document.getElementsByTagName('p')[1].remove()
+  }
+}
 
 function changeBackgroundColor() {
   document.body.style.backgroundColor = inputBackgroundColor.value;
