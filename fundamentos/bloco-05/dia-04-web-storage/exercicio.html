@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leitor</title>
+  <link rel="stylesheet" href="exercicio.css">
+</head>
+
+<body>
+  <header>
+    <label for="backgroundColor" class="labels labelColor">Cor de fundo</label>
+    <input type="color" name="backgroundColor" id="inputBackgroundColor" class="inputColor">
+
+    <br>
+
+    <label for="textColor" class="labels labelColor">Cor do texto</label>
+    <input type="color" name="textColor" id="inputTextColor" class="inputColor">
+
+    <label for="fontSize" class="labels">Tamanho da fonte</label>
+    <input type="number" name="fontSize" id="inputFontSize" list="sizes">
+
+    <label for="lineHeight" class="labels">Espaçamento entre linhas</label>
+    <input type="number" name="lineHeight" id="inputLineHeight" list="sizes">
+
+    <label for="fontFamily" class="labels">Estilo da fonte</label>
+    <input type="text" name="fontFamily" id="inputFontFamily" list="fontsFamily">
+
+    <br>
+    
+    <label for="userText" id="labelUserText">Insira seu texto aqui.</label>
+    <input type="text" name="userText" id="inputUserText">
+  </header>
+  <main>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime excepturi totam, pariatur nisi voluptatum numquam debitis molestiae qui dicta incidunt inventore assumenda alias minus ut commodi magnam distinctio dignissimos quo?</p>
+  </main>
+  <datalist id="fontsFamily">
+    <option value="'Courier New', Courier, monospace">
+    <option value="'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+    <option value="'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+    <option value="'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
+    <option value="'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+    <option value="'Times New Roman', Times, serif">
+    <option value="'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
+    <option value="Arial, Helvetica, sans-serif">
+    <option value="Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+    <option value="Georgia, 'Times New Roman', Times, serif">
+    <option value="Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">
+    <option value="Verdana, Geneva, Tahoma, sans-serif">
+  </datalist>
+  <datalist id="sizes">
+    <option value="16">
+    <option value="18">
+    <option value="20">
+    <option value="22">
+    <option value="24">
+    <option value="26">
+    <option value="28">
+    <option value="30">
+    <option value="32">
+  </datalist>
+  <script src="exercicio.js"></script>
+</body>
+</body>
+
+</html>
