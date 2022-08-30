@@ -23,12 +23,12 @@ const buttonAdd = document.getElementById('btn-add')
 let numbers = [];
 let activeHoliday = true;
 let activeFriday = true;
-let clickTaskColor = true;
 
 createButton('Feriados', 'btn-holiday', changeBackgroundColorHoliday);
 createButton('Sexta-feira', 'btn-friday', changeTextFriday)
-addNewTask('teste')
 createNewTaskColor('red')
+createNewTaskColor('green')
+createNewTaskColor('blue')
 buttonAdd.addEventListener('click', addCompromise)
 input.addEventListener('keydown', pressedEnterInput)
 
@@ -113,12 +113,10 @@ function createNewTaskColor (color) {
 }
 
 function clickTaskColorSelect(event) {
-  if(clickTaskColor) {
-    event.target.classList.add('task', 'selected')
-  } else {
-    event.target.classList.remove('selected')
+  if(document.querySelector('.my-tasks > div.selected') !== null) {
+    document.querySelector('.my-tasks > div.selected').classList.remove('selected');
   }
-  clickTaskColor = !clickTaskColor
+  event.target.classList.add('task', 'selected')
 }
 
 function changeDayColorClick(event) {
