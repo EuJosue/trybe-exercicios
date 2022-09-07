@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body {
+  background-color: rgb(240, 240, 240);
+}
+
+header {
+  text-align: center;
+  width: 80%;
+  margin: 20px auto;
+  color: rgb(46, 50, 61);
+  background-color: rgb(222, 222, 228);
+  border: 1px solid rgb(190, 190, 200);
+}
+
+header h1 {
+  padding: 13px 0;
+  font-size: 40px;
+}
+
+header p {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 10px;
+}
+
+#form {
+  background-color: rgb(222, 222, 228);
+  color: rgb(46, 50, 61);
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid rgb(190, 190, 200);
+}
+
+.form-line {
+  padding: 10px 20px;
+}
+
+.form-line input[type="text"],
+.form-line textarea,
+.form-line input[type="email"] {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(190, 190, 200);
+  border-radius: 3px;
+  width: 100%;
+  padding: 7px;
+  font-size: 16px;
+  color: rgb(46, 50, 61);
+}
+
+.labelRadio {
+  padding-left: 10px;
+}
+
+form > div[class="form-line"] {
+  margin-left: 8.5%;
+}
+
+form > div[class="form-line"] > button {
+  border: 1px solid rgb(190, 190, 200);
+  border-radius: 3px;
+  padding: 15px;
+  font-size: 16px;
+  color: rgb(46, 50, 61);
+  margin-right: 25px;
+}
