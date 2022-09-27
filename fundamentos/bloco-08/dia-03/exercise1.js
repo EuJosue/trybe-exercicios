@@ -188,7 +188,7 @@ function oldBooks(arr) {
 // console.log(oldBooks(books)); // [ 'O Senhor dos Anéis', 'Fundação', 'O Chamado de Cthulhu' ]
 
 function authorWith3DotsOnName(arr) {
-  return arr.filter((book) => (book.author.name.match(/\./g) || []).length === 3).map((book) => book.name).toString();
+  return arr.filter(({author: {name: nameAuthor}}) => nameAuthor.match(/^(\w*\.\s*){3}[^.]+$/g)).map(({name}) => name).toString();
 }
 
-// console.log(authorWith3DotsOnName(books)); // 'O Senhor dos Anéis'
+console.log(authorWith3DotsOnName(books)); // 'O Senhor dos Anéis'
