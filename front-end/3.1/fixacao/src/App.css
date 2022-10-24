@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  margin: 100px;
+  text-align: center;
+}
+
+button {
+  height: 50px;
+  margin: 10px;
+  width: 50px;
+}
