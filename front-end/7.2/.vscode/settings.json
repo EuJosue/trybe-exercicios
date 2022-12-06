@@ -1,0 +1,13 @@
+{
+  "launch": {
+
+    "configurations": [],
+    "compounds": []
+  },
+  "json.schemas": [
+  
+  ],
+  "editor.fontLigatures": false,
+  "editor.fontWeight": "normal",
+  "terminal.integrated.localEchoStyle": "dim"
+}
